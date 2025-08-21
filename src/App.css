@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.breadcrumb {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.breadcrumb a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.image-box {
+  width: 100%;
+  height: 150px;
+  background: darkred;
+  margin-bottom: 15px;
+}
+
+.author {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background: #007bff;
+  border-radius: 50%;
+}
+
+.avatar.small {
+  width: 25px;
+  height: 25px;
+}
+
+.body-text {
+  margin-bottom: 20px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.reactions {
+  display: flex;
+  justify-content: space-around;
+  background: #e6f0ff;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.reaction {
+  text-align: center;
+  font-size: 14px;
+}
+
+.comments {
+  background: #eee;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.comment-input {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.comment-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px 0 0 6px;
+}
+
+.comment-input button {
+  padding: 8px 12px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+.comment-card {
+  background: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.comment-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.comment-author {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.comment-text {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.comment-actions {
+  font-size: 12px;
+  display: flex;
+  gap: 12px;
+}
+
+.comment-actions button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 8px;
+  margin-top: 15px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
 }
