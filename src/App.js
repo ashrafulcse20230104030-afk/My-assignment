@@ -5,9 +5,9 @@ export default function App() {
   const [comments, setComments] = useState([
     {
       id: 1,
-      author: "Author Name",
+      author: "Mahia akter ",
       date: "10 February 2025",
-      text: "Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor",
+      text: "I am a big fan of Messi. I want to see him play more matches for Argentina.",
       likes: 12,
       dislikes: 1,
       replies: [],
@@ -56,11 +56,16 @@ export default function App() {
       </p>
 
       {/* Image */}
-      <div className="image-box"></div>
+      <div className="image-box">
+        <img src="/messi-wc.png" alt="Messi" className="news-image" />
+        <p className="caption">Messi in World Cup 2022</p>
+      </div>
 
       {/* Author */}
       <div className="author">
-        <div className="avatar"></div>
+        <div className="avatar">
+          <img src="/ash3.jpg" alt="Ashraful Islam" className="author-img" />
+          </div>
         <p>Ashraful Islam • 7 January 2025</p>
       </div>
 
@@ -98,21 +103,27 @@ export default function App() {
 
         {/* Comment List */}
         {comments.map((c) => (
-          <div key={c.id} className="comment-card">
-            <div className="comment-header">
-              <div className="avatar small"></div>
-              <p className="comment-author">
-                {c.author}, {c.date}
-              </p>
-            </div>
-            <p className="comment-text">{c.text}</p>
-            <div className="comment-actions">
-              <span>Like {c.likes}</span>
-              <span>Dislike {c.dislikes}</span>
-              <button className="reply-btn">Reply</button>
-            </div>
-          </div>
-        ))}
+  <div key={c.id} className="comment-card">
+    <div className="comment-header">
+      <div className="avatar small">
+        {c.author === "Mahia akter " ? (
+          <img src="/mahia.jpg" alt="Mahia Akter" className="comment-img" />
+        ) : ( 
+          <img src="/ash3.jpg" alt="Ashraful Islam" className="comment-img" />
+        )}  
+      </div>
+      <p className="comment-author">
+        {c.author}, {c.date}
+      </p>
+    </div>
+    <p className="comment-text">{c.text}</p>
+    <div className="comment-actions">
+      <span>Like {c.likes}</span>
+      <span>Dislike {c.dislikes}</span>
+      <button className="reply-btn">Reply</button>
+    </div>
+  </div>
+))}
 
         {/* Pagination */}
         <div className="pagination">
