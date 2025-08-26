@@ -49,10 +49,10 @@ export default function App() {
 
       {/* Title */}
       <h1 className="title">
-        Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor
+        Messi's last match at home for argentina coulde be against Ecuador
       </h1>
       <p className="subtitle">
-        Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor
+        coming september 4 probably messi will play his last match at home
       </p>
 
       {/* Image */}
@@ -61,13 +61,14 @@ export default function App() {
       {/* Author */}
       <div className="author">
         <div className="avatar"></div>
-        <p>Author Name • 7 January 2025</p>
+        <p>Ashraful Islam • 7 January 2025</p>
       </div>
 
       {/* Body */}
       <p className="body-text">
-        Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor
-        Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor Lorem Ipsum Dolor
+        The news totally socked me as a messi fan,I want to see messi play more and more
+        matches for argentina. Messi is the best player in the world and he is the Goat of
+        football.
       </p>
 
       {/* Reactions */}
